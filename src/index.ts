@@ -1,6 +1,12 @@
-export const sum = (a: number, b: number) => {
-  if ('development' === process.env.NODE_ENV) {
-    console.log('boop');
-  }
-  return a + b;
-};
+
+export default class Table {
+       columns: number;
+       rows: number;
+
+       constructor(columns : number, rows: number){
+          this.columns = columns;
+          this.rows = rows;
+       }
+
+       
+}
